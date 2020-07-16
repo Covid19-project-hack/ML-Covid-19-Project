@@ -3,12 +3,12 @@ package com.mlcovid19project.Models;
 public class Jsons {
 
     String videos, home_treatment_images, home_treatment_links, toll_numbers, lab_test, donate,
-            tweets, faq, epass, corona, cbse, vocational_education, go;
+            tweets, faq, epass, corona, cbse, vocational_education, go, health_care;
 
     public Jsons() {
     }
 
-    public Jsons(String videos, String home_treatment_images, String home_treatment_links, String toll_numbers, String lab_test, String donate, String tweets, String faq, String epass, String corona, String cbse, String vocational_education, String go) {
+    public Jsons(String videos, String home_treatment_images, String home_treatment_links, String toll_numbers, String lab_test, String donate, String tweets, String faq, String epass, String corona, String cbse, String vocational_education, String go, String health_care) {
         this.videos = videos;
         this.home_treatment_images = home_treatment_images;
         this.home_treatment_links = home_treatment_links;
@@ -22,6 +22,7 @@ public class Jsons {
         this.cbse = cbse;
         this.vocational_education = vocational_education;
         this.go = go;
+        this.health_care = health_care;
     }
 
     public String getVideos() {
@@ -126,5 +127,13 @@ public class Jsons {
 
     public void setGo(String go) {
         this.go = go;
+    }
+
+    public String getHealth_care() {
+        return health_care;
+    }
+
+    public void setHealth_care(String health_care) {
+        this.health_care = health_care;
     }
 }

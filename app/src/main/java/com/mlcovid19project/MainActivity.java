@@ -71,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
             "Donate Funds",
             "Online Education",
             "Government Orders",
-            "Tweets",
             "FAQs"
 
     } ;
@@ -92,7 +91,6 @@ public class MainActivity extends AppCompatActivity {
             R.drawable.donate,
             R.drawable.education,
             R.drawable.governmentorder,
-            R.drawable.tweet,
             R.drawable.faq
 
     };
@@ -222,7 +220,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response) {
                         try {
-                            JSONObject jsonObject = response.getJSONObject("HR").getJSONObject("total");
+                            JSONObject jsonObject = response.getJSONObject("ML").getJSONObject("total");
                             String confirmed = jsonObject.getString("confirmed");
                             String deceased = jsonObject.getString("deceased");
                             String tested = jsonObject.getString("tested");

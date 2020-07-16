@@ -101,7 +101,8 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ImageViewHolde
                                 break;
 
                             case 4:
-                                Intent healthcareintent = new Intent(mContext, HealthCareActivity.class);
+                                Intent healthcareintent = new Intent(Intent.ACTION_VIEW);
+                                healthcareintent.setData(Uri.parse(jsons.getHealth_care()));
                                 mContext.startActivity(healthcareintent);
                                 break;
 
@@ -164,11 +165,6 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ImageViewHolde
                                 break;
 
                             case 16:
-                                Intent tweetintent = new Intent(mContext, TweetsActivity.class);
-                                tweetintent.putExtra("url", jsons.getTweets());
-                                mContext.startActivity(tweetintent);
-                                break;
-                            case 17:
                                 Intent faqintent = new Intent(mContext, FAQsActivity.class);
                                 faqintent.putExtra("url", jsons.getFaq());
                                 mContext.startActivity(faqintent);
